@@ -1,0 +1,206 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	p {
+		font-weight: 300;
+		line-height: 1.5rem;
+		color: #8f8f8f;
+	}
+
+	a {
+		font-weight: 400;
+	}
+
+	.widget-title {
+		color: $white;		
+		font-size: 1.625rem;
+		font-weight: 700;
+		margin-bottom: 0.75rem;
+		font-family: $heading-font;
+		letter-spacing: 0.1rem;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			padding: 0;
+			list-style: none;
+
+			li {
+				padding: 0 0.25rem;
+
+				&:last-child {
+					padding-right: 0;
+				}
+		
+				a {
+					color: rgba($color: #ffff, $alpha: 0.5);		
+					background-color: #6b3131;
+					display: inline-block;
+					line-height: 1.8125rem;
+					width: 2.8125rem;
+					height: 2.8125rem;		
+					vertical-align: middle;
+					text-align: center;
+					border-radius: 0.5rem;	
+
+					@include transition(all 0.3s ease-in-out);
+		
+					&:hover {
+						background-color: $theme-color;
+						color: $white;
+					}
+		
+					i {
+						vertical-align: top;
+						line-height: 1.8125rem;
+						padding: 0.5rem;
+						font-size: 1.125rem;
+					}
+
+					&.contact {
+						color: $primary !important;
+						background-color: $white;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			list-style: none;
+
+			li {
+
+				margin-bottom: 0.7rem;
+
+				a {
+					color: #868686;
+					font-weight: 600;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-size: 0.875rem;
+
+					&:hover {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+
+		&.widget-links {
+
+			.widget-content {
+				justify-content: space-between;
+			}
+
+			ul {
+				width: auto;
+				margin: auto;
+			}
+		}
+}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			.payment-icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .5rem;
+				width: 3.875rem;
+				height: 2.5rem;
+				background-color: #6b3131;
+				padding: 0.2rem;
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 0.5rem !important;
+
+				@include media-breakpoint-down(sm) {
+					width: 4rem !important;
+				}
+
+				&.visa {
+					background-image: url(../images/payments/visa.png);
+				}
+
+				&.paypal {
+					background-image: url(../images/payments/paypal.png);
+				}
+
+				&.express {
+					background-image: url(../images/payments/express.png);
+				}
+
+				&.mastercard {
+					background-image: url(../images/payments/mastercard.png);
+				}
+
+				&.jcb {
+					background-image: url(../images/payments/jcb.png);
+				}
+			}
+		}
+	}
+
+	// Widget - custom html
+	&.widget-custom-html {
+		.widget-content {
+			a {
+				display: block;
+				text-decoration: none;
+				color: #595959;
+				font-size: 1.875rem;
+			}
+		}
+	}
+
+	&.widget-subscribe {
+		.widget-content {
+			p {
+				letter-spacing: 0.1rem;
+				font-size:0.875rem;
+			}
+
+			#widget-subscribe-form {
+				.input-group-append {
+					margin-left: -1rem;
+				}
+
+				input, button {
+					background-color: #1f1f1f;
+				}
+			}
+
+			::placeholder {
+				color: #c3c3c3;
+				opacity: 1; 
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+
+/* ----------------------------------------------------------------
+
+	blog.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+.post {
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+.post-thumbnail {
+	display: block;
+	position: relative;
+	width: 100%;
+
+	img {
+		width: 100%;
+		border-radius: 0.5rem;
+	}
+}
+
+.post-content {
+	padding: 2rem 1rem;
+	background-color: $white;
+
+	.entry-title {
+		color: #6c3231;
+	}
+
+	.entry-meta {
+		font-weight: 300;
+		color: #e47f85;
+	}
+
+	.entry-link {
+		font-weight: 300;
+		color: #ff9f63;
+	}
+}

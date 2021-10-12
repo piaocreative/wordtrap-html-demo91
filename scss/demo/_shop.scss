@@ -1,0 +1,190 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+/* category
+-----------------------------------------------------------------*/
+.category {
+	padding: 1rem 4rem;
+	background-color: $white;
+	margin-bottom: 0.875rem;
+	border: 1px solid #efefef;
+	text-align: center;
+
+	.category-image {
+		img {
+			max-height: 4rem;
+		}
+	}
+}
+
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	position: relative;
+	margin-bottom: 0.875rem;
+
+	.product-image {
+		position: relative;
+
+		img {
+			width: 100%;
+			margin: auto;
+			border-radius: 0.5rem;
+		}
+	}
+
+	.product-details {
+		padding: 2rem 2.25rem 0;
+		z-index: 1;
+	}
+
+	.product-price {
+		p {
+			font-size: 0.75rem;
+			color: #afafaf;
+		}
+
+		span {
+			font-family: $heading-font;
+			font-weight: 500;
+			font-size: 1.875rem;
+			color: #dc565d;
+		}
+
+		del {
+			font-weight: 300;
+			color: #afafaf;
+		}
+	}
+
+	.product-title {
+		font-family: $body-font;
+		font-size: 1rem;
+		font-weight: 300;
+		color: $theme-color;
+	}
+
+	.product-rating {
+		line-height: 1;
+		font-size: 0.875rem;
+		color: #b3b2b0;
+
+		i {
+			color: #ff893f;
+			font-size: 0.65rem;
+
+			&.empty {
+				color: rgba(#ff893f, 0.5);
+			}
+		}
+	}
+
+	.product-btns {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+
+		@include transition(all 0.5s ease-in-out);
+	}
+
+	.add-to-cart, .add-to-wishlist {
+		width: 3rem;
+		height: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+	}	
+
+	.add-to-cart {
+		background-color: $white;
+		color: $theme-color;
+	}
+
+	.add-to-wishlist {
+		color: $white;
+		background-color: #ff893f;
+	}
+
+	&:hover {
+		.product-btns {
+			opacity: 1;
+		}
+	}
+}
+
+.onnew, .onsale {
+	font-size: 0.8125rem;
+	font-weight: 500;
+	padding: 0.1rem 1rem;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	text-transform: uppercase;
+	border-radius: 0.3rem;
+}
+
+.onnew {
+	color: #2c7c8a;
+	background-color: #b2f0fb;
+}
+
+.onsale {
+	background-color: #ffbdbc;
+	color: #a43533;
+}
+
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
+
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+			border-radius: 0.5rem;;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+		padding: 12.15rem 3rem;
+
+		h3 {
+			line-height: 1.2;
+		}
+    }
+}
