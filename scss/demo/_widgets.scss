@@ -25,10 +25,6 @@
 		color: #8f8f8f;
 	}
 
-	a {
-		font-weight: 400;
-	}
-
 	.widget-title {
 		color: $white;		
 		font-size: 1.625rem;
@@ -75,12 +71,6 @@
 						padding: 0.5rem;
 						font-size: 1.125rem;
 					}
-
-					&.contact {
-						color: $primary !important;
-						background-color: $white;
-						border-radius: 50%;
-					}
 				}
 			}
 		}
@@ -99,7 +89,6 @@
 					color: #868686;
 					font-weight: 600;
 					text-transform: uppercase;
-					text-decoration: none;
 					font-size: 0.875rem;
 
 					&:hover {
@@ -132,17 +121,17 @@
 				display: inline-block;
 				vertical-align: middle;
 				margin-right: .5rem;
-				width: 3.875rem;
-				height: 2.5rem;
+				width: 4.875rem;
+				height: 3.125rem;
 				background-color: #6b3131;
 				padding: 0.2rem;
-				background-size: 80% auto;
+				background-size: 60% auto;
 				background-repeat: no-repeat;
 				background-position: center;
-				border-radius: 0.5rem !important;
+				border-radius: 0.5rem;
 
 				@include media-breakpoint-down(sm) {
-					width: 4rem !important;
+					width: 4rem;
 				}
 
 				&.visa {
@@ -173,7 +162,6 @@
 		.widget-content {
 			a {
 				display: block;
-				text-decoration: none;
 				color: #595959;
 				font-size: 1.875rem;
 			}

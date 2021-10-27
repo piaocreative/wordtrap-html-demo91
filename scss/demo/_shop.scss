@@ -18,16 +18,21 @@
 /* category
 -----------------------------------------------------------------*/
 .category {
-	padding: 1rem 4rem;
+	padding: 1.5rem 4rem;
 	background-color: $white;
 	margin-bottom: 0.875rem;
 	border: 1px solid #efefef;
 	text-align: center;
+	border-radius: 0.75rem;
 
 	.category-image {
 		img {
-			max-height: 4rem;
+			max-height: 3.5rem;
 		}
+	}
+
+	p {
+		color: #6c3231;
 	}
 }
 
@@ -36,7 +41,7 @@
 -----------------------------------------------------------------*/
 .product {
 	position: relative;
-	margin-bottom: 0.875rem;
+	margin-bottom: 2.5rem;
 
 	.product-image {
 		position: relative;
@@ -76,7 +81,7 @@
 		font-family: $body-font;
 		font-size: 1rem;
 		font-weight: 300;
-		color: $theme-color;
+		color: #6c3231;
 	}
 
 	.product-rating {
